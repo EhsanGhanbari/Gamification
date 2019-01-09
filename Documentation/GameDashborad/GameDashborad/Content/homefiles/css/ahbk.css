@@ -1,0 +1,113 @@
+body {
+    background: #dddddd;
+}
+
+.body {
+    background: url(../img/bg/4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.headerFixer {
+    height: 20px;
+}
+
+.boxBorder {
+    border: black 2px dashed;
+    margin: 0 -10px;
+    padding: 10px;
+}
+
+.navbar {
+    background: maroon;
+    color: #ffffff !important;
+}
+
+    .navbar a {
+        color: #ffffff !important;
+    }
+
+
+.loginTabBox {
+    background: green;
+    color: #ffffff;
+}
+
+.registerTabBox {
+    background: orangered;
+    color: #ffffff;
+}
+
+p {
+    text-align: justify;
+}
+
+#bankMessage {
+    text-align: justify;
+    padding: 20px;
+    background: #222222;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+#bankadv {
+    text-align: justify;
+    padding: 20px;
+    background: #eeeeee;
+    color: #111111;
+    font-size: 1.5em;
+}
+
+#bankfooter {
+    text-align: justify;
+    padding: 20px;
+    background: maroon;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+    #bankfooter h3 {
+        font-weight: bold;
+    }
+
+.bankfooterBox {
+    text-align: justify;
+    padding: 5px;
+    background: #eeeeee;
+    color: #000000;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+    .bankfooterBox > div {
+    }
+
+#fastLogin input {
+    width: auto !important;
+    display: inline-block !important;
+}
+
+#registerForm {
+}
+
+    #registerForm input {
+        width: 100%;
+        text-align: center;
+    }
+
+.carousel-caption {
+    background: #7f7f7f;
+    background: rgba(0,0,0,0.8);
+}
+
+.control-label {
+    cursor: pointer;
+}
+
+.carousel-caption p {
+    padding: 0 10px;
+}

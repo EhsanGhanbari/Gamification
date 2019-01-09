@@ -1,0 +1,338 @@
+﻿        <!-- BEGIN SIDEBAR -->
+<div class="page-sidebar-wrapper">
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <div class="page-sidebar navbar-collapse collapse">
+        <!-- BEGIN SIDEBAR MENU -->
+        <ul class="page-sidebar-menu" data-auto-scroll="true" data-slide-speed="200">
+            <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+            <li class="sidebar-toggler-wrapper">
+                <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                <div class="sidebar-toggler">
+                </div>
+                <!-- END SIDEBAR TOGGLER BUTTON -->
+            </li>
+            <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+            @*<li class="sidebar-search-wrapper">
+                <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
+                <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
+                <form class="sidebar-search" action="extra_search.html" method="POST">
+                    <a href="javascript:;" class="remove">
+                        <i class="icon-close"></i>
+                    </a>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+                        </span>
+                    </div>
+                </form>
+                <!-- END RESPONSIVE QUICK SEARCH FORM -->
+            </li>*@
+            @*<li>
+                &nbsp;
+            </li>*@
+            <li class="start active ">
+                <a href="/Dashborad/index">
+                    <i class="icon-home"></i>
+                    <span class="title">بازیکاران</span>
+                    <span class="selected"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-basket"></i>
+                    <span class="title">حساب کاربری</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/user/index">
+                            <i class="icon-home"></i>
+                            ویرایش سطح کاربری
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/user/GiftTable">
+                            <i class="icon-home"></i>
+                           جدول امتیازها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/user/logs">
+                            <i class="icon-basket"></i>
+                            گزارشات عملکرد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/user/account">
+                            <i class="icon-tag"></i>
+                            گزارشات مالی
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-rocket"></i>
+                    <span class="title">بازی ها</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/game/football">
+                            مربیان بزرگ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/game/football">
+                            جنگ ستارگان
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/game/football">
+                            شهر ویران
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/game/football">
+                            مدال افتخار
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- BEGIN FRONTEND THEME LINKS -->
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-star"></i>
+                    <span class="title">
+                        خرید شارژ
+                    </span>
+                    <span class="arrow">
+                    </span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Complete eCommerce Frontend Theme For Metronic Admin">
+                        <a href="/Charge/mci">
+                            <span class="title">
+                                همراه اول
+                            </span>
+                        </a>
+                    </li>
+                    <li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Complete Corporate Frontend Theme For Metronic Admin">
+                        <a href="/Charge/irancell">
+                            <span class="title">
+                                ایرانسل
+                            </span>
+                        </a>
+                    </li>
+                    <li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Complete One Page Parallax Frontend Theme For Metronic Admin">
+                        <a href="/Charge/rightel">
+                            <span class="title">
+                                رایتل
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- END FRONTEND THEME LINKS -->
+
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-folder"></i>
+                    <span class="title">پرداخت قبوض</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/bill/water">
+                            <i class="icon-bar-chart"></i>
+                            قبض آب
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bill/electronic">
+                            <i class="icon-bar-chart"></i>
+                            قبض برق
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bill/phone">
+                            <i class="icon-bar-chart"></i>
+                            قبض تلفن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bill/gas">
+                            <i class="icon-bar-chart"></i>
+                            قبض گاز
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bill/mobile">
+                            <i class="icon-bar-chart"></i>
+                            قبض موبایل
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-globe"></i> قبوض خاص<span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#"><i class="icon-tag"></i> شهرداری</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-pencil"></i> میادین</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-graph"></i> عوارض نوسازی</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-diamond"></i>
+                    <span class="title">خدمات کارت</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/card/citypay">
+                            کارت شهروندی
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/card/mcs">
+                            کارت مهر شهر
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/card/giftcard">
+                            کارت هدیه
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/card/specialgiftcard">
+                            کارت هدیه ویژه
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-puzzle"></i>
+                    <span class="title">سایر خدمات</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="components_pickers.html">
+                            شهرنت
+                        </a>
+                    </li>
+                    <li>
+                        <a href="components_dropdowns.html">
+                            ویژه نابینایان
+                        </a>
+                    </li>
+                    <li>
+                        <a href="components_form_tools.html">
+                            سرمایه گذاری
+                        </a>
+                    </li>
+                    <li>
+                        <a href="components_editors.html">
+                            محصول جدید 1
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="icon-settings"></i>
+                    <span class="title">خدمات خیریه</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="form_controls.html">
+                            محک
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form_layouts.html">
+                            صندوق های خیریه و کمیته امداد
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="form_wizard.html">
+                            بنیاد کودکان بی سرپرست
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            @*
+                <li>
+                <a href="javascript:;">
+                    <i class="icon-logout"></i>
+                    <span class="title">Quick Sidebar</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="quick_sidebar_push_page.html">
+                            Push Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quick_sidebar_push_content.html">
+                            Push Content
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quick_sidebar_over_content.html">
+                            Over Content
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quick_sidebar_over_content_transparent.html">
+                            Over Content & Transparent
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quick_sidebar_on_boxed_layout.html">
+                            Boxed Layout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+                *@
+
+            <li>
+                <a href="charts.html">
+                    <i class="icon-bar-chart"></i>
+                    <span class="title">مرکز تماس 8655</span>
+                </a>
+            </li>
+
+            <li class="last ">
+                <a href="charts.html">
+                    <i class="icon-bar-chart"></i>
+                    <span class="title">شرکت ما</span>
+                </a>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+</div>
+<!-- END SIDEBAR -->

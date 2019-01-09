@@ -1,0 +1,28 @@
+﻿.page-content {
+    background: #dddddd;
+}
+.form input {
+    text-align: center;
+}
+.form select, .form option{
+    text-align: center!important;
+}
+
+tr.emptyrow {
+     background: #eeeeee!important;
+}
+.centerImg{
+    text-align: center!important;
+}
+.centerImg img{
+    display: inline-block!important;
+}
+
+.sidebar-toggler {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.text-center img {
+    display: inline-block;
+}

@@ -1,0 +1,120 @@
+﻿<link href="/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" />
+<link href="/Content/custom/sameHeights.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-lg-9">
+        <div class="portlet box green">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-gift"></i>قبض تلفن همراه
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form action="#" class="form-horizontal">
+                    <div class="form-actions top fluid">
+                        <ol>
+                            <li>شناسه قبض را وارد نمایید</li>
+                            <li>شناسه پرداخت را وارد نمایید</li>
+                            <li>قبض خود را پرداخت نمایید</li>
+                        </ol>
+                        @*<h2 style="text-align: center;">
+                                از شارژ خود لذت ببرید
+                            </h2>*@
+                    </div>
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-sm-3 centerImg">
+                                @*<img class="img-responsive hidden-xs"   src="/Content/images/mci.jpg" />*@
+                                <img class="img-responsive" src="/Content/images/charge/mci.jpg" style="max-width: 150px;" />
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">شناسه قبض</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="شناسه قبض">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-mobile"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">شناسه پرداخت</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="شناسه پرداخت">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-money"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn green pull-right">پرداخت قبض</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions fluid">
+                        <div class="col-md-12">
+                            <p>
+                                با توجه به بحران آب در جهان، در مصرف آب صرفه جویی نمایید.
+                            </p>
+                        </div>
+                    </div>
+
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-3">
+        <div class="portlet box red">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-gift"></i>جوایز پرداخت قبض
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form action="#" class="form-horizontal">
+                    <div class="form-actions top fluid">
+                        <div class="col-lg-12">
+                            <img class="img-responsive" src="/Content/images/Daric.png" />
+                        </div>
+                    </div>
+                    <div class="form-body">
+                        <div>
+                            <h3>هر قبض</h3>
+                            <hr class="style-eight">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="alert alert-warning text-center">
+                                        <strong>100</strong>داریک
+                                    </div>
+                                    <div class="alert alert-success text-center">
+                                        <strong>300</strong>داریک
+                                    </div>
+                                    <div class="alert alert-danger text-center">
+                                        <strong>1000</strong>داریک
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="~/metronic/admin/pages/scripts/components-form-tools.js"></script>
+@section customScript{
+    <script src="/Content/images/bg/bgManager.js"></script>
+}

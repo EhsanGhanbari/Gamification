@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{358EF040-E8BE-4A75-AB5F-577012B53E42}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gamification.Application</RootNamespace>
+    <AssemblyName>Gamification.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.3.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationInstaller.cs" />
+    <Compile Include="BusinessTask\BillBusiness.cs" />
+    <Compile Include="BusinessTask\CardBusiness.cs" />
+    <Compile Include="BusinessTask\ChargeBusiness.cs" />
+    <Compile Include="BusinessTask\CharityBusiness.cs" />
+    <Compile Include="BusinessTask\DarikBusiness.cs" />
+    <Compile Include="BusinessTask\EntityBaseBusiness.cs" />
+    <Compile Include="BusinessTask\GameBusiness.cs" />
+    <Compile Include="BusinessTask\MessageBusiness.cs" />
+    <Compile Include="BusinessTask\NotificationBusiness.cs" />
+    <Compile Include="BusinessTask\TaskBusiness.cs" />
+    <Compile Include="BusinessTask\UserBusiness.cs" />
+    <Compile Include="Mapping\BillMap.cs" />
+    <Compile Include="Mapping\CardMap.cs" />
+    <Compile Include="Mapping\ChargeMap.cs" />
+    <Compile Include="Mapping\CharityMap.cs" />
+    <Compile Include="Mapping\DarikMap.cs" />
+    <Compile Include="Mapping\EntityBaseMap.cs" />
+    <Compile Include="Mapping\GameMap.cs" />
+    <Compile Include="Mapping\MessageMap.cs" />
+    <Compile Include="Mapping\NotificationMap.cs" />
+    <Compile Include="Mapping\TaskMap.cs" />
+    <Compile Include="Mapping\UserMap.cs" />
+    <Compile Include="Model\Bill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Card.cs" />
+    <Compile Include="Model\Charge.cs" />
+    <Compile Include="Model\Charity.cs" />
+    <Compile Include="Model\Darik.cs" />
+    <Compile Include="Model\EntityBase.cs" />
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\Notification.cs" />
+    <Compile Include="Model\Task.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gamification.Shared\Gamification.Shared.csproj">
+      <Project>{ebb7f158-b1ab-4a7f-be70-163e29d25e3c}</Project>
+      <Name>Gamification.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

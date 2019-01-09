@@ -1,0 +1,28 @@
+﻿@model Gamification.Service.DataModel.TaskView
+
+@using (Html.BeginForm())
+{
+    <div>
+        Title
+        @Html.TextBoxFor(c => c.Title)
+    </div>
+
+    <div>
+        Body
+        @Html.TextBoxFor(c => c.Body)
+    </div>
+
+    <div>
+        Pending?
+        @Html.CheckBoxFor(c => c.Pending)
+    </div>
+
+    <div>
+        Pending?
+        @Html.CheckBoxFor(c => c.IsRead)
+    </div>
+
+    <div>
+        <input type="submit" value="ذخیره" />
+    </div>
+}

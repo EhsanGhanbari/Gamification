@@ -1,0 +1,151 @@
+﻿
+<link href="/metronic/admin/pages/css/portfolio-rtl.css" rel="stylesheet" />
+
+<!-- BEGIN PAGE HEADER-->
+<div class="row">
+    <div class="col-md-12">
+        <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+        <h3 class="page-title">
+            کارت هدیه
+        </h3>
+        <hr style="style-one" />
+        <!-- END PAGE TITLE & BREADCRUMB-->
+    </div>
+</div>
+<!-- END PAGE HEADER-->
+<!-- BEGIN PAGE CONTENT-->
+<div class="row">
+    <div class="col-md-9">
+        <div class="portlet box red">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-gift"></i>کارت هدیه
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row" style="">
+                    <div class="form-body">
+                        <div class="col-md-6">
+                            <div style="padding: 20px;" class="text-center">
+                                <p>طرح کارت هدیه مورد نظر را انتخاب نمایید</p>
+                                <img id="selectedimage" class="img-responsive"  src="/Content/images/GiftCard/05.jpg" />
+                                <br />
+                                <br/>
+                                
+                                <button class="btn btn-large purple" onclick=" $('#uploader').trigger('click');">انتخاب عکس دلخواه</button>
+                                
+                                <input id="uploader" class="btn uploader" type="file" style="display: none" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center" style="padding-top: 20px;">
+
+                                <form action="/account/citypay">
+                                    <p>
+                                        عبارت مورد نظر را وارد نمایید(ترجیحا 4 یا 5 کلمه)
+                                    </p>
+                                    <div class="input-group">
+
+                                        <input type="text" class="form-control" placeholder="عبارت مورد نظر">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-credit-card"></i>&nbsp;
+                                        </span>
+                                    </div>
+                                    <br />
+                                    <p>مبلغ مورد نظر را انتخاب نمایید(تومان)</p>
+                                    <div class="input-group">
+                                        <select class="form-control select2me" data-placeholder="Select...">
+                                            <option value="01">10,000</option>
+                                            <option value="02">20,000</option>
+                                            <option value="03">50,000</option>
+                                            <option value="04">100,000</option>
+                                            <option value="05">200,000</option>
+                                            <option value="06">250,000</option>
+                                            <option value="07">300,000</option>
+                                            <option value="08">400,000</option>
+                                            <option value="09">500,000</option>
+                                            <option value="10">700,000</option>
+                                            <option value="11">800,000</option>
+                                            <option value="12">1,000,000</option>
+                                        </select>
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-money"></i>
+                                        </span>
+                                    </div>
+                                    <br />
+                                    <button class="btn btn-large btn-success">ثبت خرید</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END FORM-->
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3">
+        <div class="portlet box red">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-gift"></i>جوایز خرید کارت هدیه
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form action="#" class="form-horizontal">
+                    <div class="form-actions top fluid">
+                        <div class="col-lg-12">
+                            <img class="img-responsive" src="/Content/images/Daric.png" />
+                        </div>
+                    </div>
+                    <div class="form-body">
+                        <div>
+                            <h3>هر هزار تومان </h3>
+                            <hr class="style-eight">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="alert alert-warning text-center">
+                                        <strong>100</strong>داریک
+                                    </div>
+                                    <div class="alert alert-success text-center">
+                                        <strong>300</strong>داریک
+                                    </div>
+                                    <div class="alert alert-danger text-center">
+                                        <strong>1000</strong>داریک
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->
+@section customScript{
+
+    <script src="/metronic/global/plugins/jquery-mixitup/jquery.mixitup.min.js"></script>
+    <script src="/metronic/admin/pages/scripts/portfolio.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            //Metronic.init(); // init metronic core components
+            //Layout.init(); // init current layout
+            //QuickSidebar.init() // init quick sidebar
+            Portfolio.init();
+            $(".mix-link").click(function () {
+                var imgsrc = $(this).closest(".mix-inner").children("img").attr("src");
+                $("#selectedimage").attr("src", imgsrc);
+                $('html, body').animate({
+                    scrollTop: $("#selectedimage").offset().top - 100
+                }, 1000);
+            });
+        });
+    </script>
+
+} 

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Application", "Gamification.Application\Gamification.Application.csproj", "{358EF040-E8BE-4A75-AB5F-577012B53E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Service", "Gamification.Service\Gamification.Service.csproj", "{89404CEF-382E-40C3-9CCF-99A183A34BED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Web.API", "Gamification.Web.API\Gamification.Web.API.csproj", "{A410B9AB-F186-4F4E-989B-F67A3D0E59B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Web.MVC", "Gamification.Web.MVC\Gamification.Web.MVC.csproj", "{64B03E1C-92E5-434F-AD62-0B30095BC763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Shared", "Gamification.Shared\Gamification.Shared.csproj", "{EBB7F158-B1AB-4A7F-BE70-163E29D25E3C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ehsanghanbari.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gamification.Application\\Gamification.Application.csproj
+		SccProjectName1 = Gamification.Application
+		SccLocalPath1 = Gamification.Application
+		SccProjectUniqueName2 = Gamification.Service\\Gamification.Service.csproj
+		SccProjectName2 = Gamification.Service
+		SccLocalPath2 = Gamification.Service
+		SccProjectUniqueName3 = Gamification.Web.API\\Gamification.Web.API.csproj
+		SccProjectName3 = Gamification.Web.API
+		SccLocalPath3 = Gamification.Web.API
+		SccProjectUniqueName4 = Gamification.Web.MVC\\Gamification.Web.MVC.csproj
+		SccProjectName4 = Gamification.Web.MVC
+		SccLocalPath4 = Gamification.Web.MVC
+		SccProjectUniqueName5 = Gamification.Shared\\Gamification.Shared.csproj
+		SccProjectName5 = Gamification.Shared
+		SccLocalPath5 = Gamification.Shared
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{358EF040-E8BE-4A75-AB5F-577012B53E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358EF040-E8BE-4A75-AB5F-577012B53E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358EF040-E8BE-4A75-AB5F-577012B53E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358EF040-E8BE-4A75-AB5F-577012B53E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89404CEF-382E-40C3-9CCF-99A183A34BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89404CEF-382E-40C3-9CCF-99A183A34BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89404CEF-382E-40C3-9CCF-99A183A34BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89404CEF-382E-40C3-9CCF-99A183A34BED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A410B9AB-F186-4F4E-989B-F67A3D0E59B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A410B9AB-F186-4F4E-989B-F67A3D0E59B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A410B9AB-F186-4F4E-989B-F67A3D0E59B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A410B9AB-F186-4F4E-989B-F67A3D0E59B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B03E1C-92E5-434F-AD62-0B30095BC763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B03E1C-92E5-434F-AD62-0B30095BC763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B03E1C-92E5-434F-AD62-0B30095BC763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B03E1C-92E5-434F-AD62-0B30095BC763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB7F158-B1AB-4A7F-BE70-163E29D25E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB7F158-B1AB-4A7F-BE70-163E29D25E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB7F158-B1AB-4A7F-BE70-163E29D25E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB7F158-B1AB-4A7F-BE70-163E29D25E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
